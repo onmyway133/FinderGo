@@ -52,34 +52,37 @@ class FinderSync: FIFinderSync {
   // MARK: - Menu and toolbar item support
 
   override var toolbarItemName: String {
-    return "FinderSy"
+    return "FinderGo"
   }
 
   override var toolbarItemToolTip: String {
-    return "FinderSy: Click the toolbar item for a menu."
+    return "FinderGo: Click the toolbar item for a menu."
   }
 
   override var toolbarItemImage: NSImage {
-    return NSImage(named: NSImageNameCaution)!
+    return NSImage(named: NSImageNameStatusAvailable)!
   }
 
   override func menu(for menuKind: FIMenuKind) -> NSMenu {
-    // Produce a menu for the extension.
     let menu = NSMenu(title: "")
-    menu.addItem(withTitle: "Example Menu Item", action: #selector(sampleAction(_:)), keyEquivalent: "")
+
+    menu.addItem(withTitle: "iTerm", action: #selector(openiTerm(_:)), keyEquivalent: "")
+    menu.addItem(withTitle: "Terminal", action: #selector(openTerminal(_:)), keyEquivalent: "")
+    menu.addItem(withTitle: "Hyper", action: #selector(openHyper(_:)), keyEquivalent: "")
+
     return menu
   }
 
-  @IBAction func sampleAction(_ sender: AnyObject?) {
-    let target = FIFinderSyncController.default().targetedURL()
-    let items = FIFinderSyncController.default().selectedItemURLs()
+  @IBAction func openiTerm(_ sender: AnyObject?) {
 
-    let item = sender as! NSMenuItem
-    NSLog("sampleAction: menu item: %@, target = %@, items = ", item.title as NSString, target!.path as NSString)
-    for obj in items! {
-      NSLog("    %@", obj.path as NSString)
-    }
   }
 
+  @IBAction func openTerminal(_ sender: AnyObject?) {
+
+  }
+
+  @IBAction func openHyper(_ sender: AnyObject?) {
+
+  }
 }
 

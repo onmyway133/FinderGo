@@ -21,7 +21,6 @@
 - [x] Go to Terminal
 - [ ] Go to iTerm
 - [ ] Go to Hyper
-- [ ] Go to Box
 
 # How to use
 
