@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */; };
+		D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCECB1E7751EF00A74C33 /* ViewController.swift */; };
+		D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
+		D20DCED11E7751EF00A74C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECF1E7751EF00A74C33 /* Main.storyboard */; };
+		D20DCEDC1E7751EF00A74C33 /* FinderGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEDB1E7751EF00A74C33 /* FinderGoTests.swift */; };
+		D20DCEE71E7751EF00A74C33 /* FinderGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEE61E7751EF00A74C33 /* FinderGoUITests.swift */; };
+		D20DCEFD1E77520400A74C33 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEFC1E77520400A74C33 /* FinderSync.swift */; };
+		D20DCF011E77520400A74C33 /* FinderSyncExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D20DCED81E7751EF00A74C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20DCEBE1E7751EF00A74C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20DCEC51E7751EF00A74C33;
+			remoteInfo = FinderGo;
+		};
+		D20DCEE31E7751EF00A74C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20DCEBE1E7751EF00A74C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20DCEC51E7751EF00A74C33;
+			remoteInfo = FinderGo;
+		};
+		D20DCEFF1E77520400A74C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20DCEBE1E7751EF00A74C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20DCEF71E77520400A74C33;
+			remoteInfo = FinderSyncExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D20DCF051E77520400A74C33 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D20DCF011E77520400A74C33 /* FinderSyncExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D20DCEC61E7751EF00A74C33 /* FinderGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D20DCECB1E7751EF00A74C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20DCECD1E7751EF00A74C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D20DCED01E7751EF00A74C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D20DCED21E7751EF00A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20DCED71E7751EF00A74C33 /* FinderGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinderGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20DCEDB1E7751EF00A74C33 /* FinderGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderGoTests.swift; sourceTree = "<group>"; };
+		D20DCEDD1E7751EF00A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20DCEE21E7751EF00A74C33 /* FinderGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinderGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20DCEE61E7751EF00A74C33 /* FinderGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderGoUITests.swift; sourceTree = "<group>"; };
+		D20DCEE81E7751EF00A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinderSyncExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20DCEFB1E77520400A74C33 /* FinderSyncExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderSyncExtension.entitlements; sourceTree = "<group>"; };
+		D20DCEFC1E77520400A74C33 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		D20DCEFE1E77520400A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20DCEC31E7751EF00A74C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCED41E7751EF00A74C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEDF1E7751EF00A74C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEF51E77520400A74C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20DCEBD1E7751EF00A74C33 = {
+			isa = PBXGroup;
+			children = (
+				D20DCEC81E7751EF00A74C33 /* FinderGo */,
+				D20DCEDA1E7751EF00A74C33 /* FinderGoTests */,
+				D20DCEE51E7751EF00A74C33 /* FinderGoUITests */,
+				D20DCEF91E77520400A74C33 /* FinderSyncExtension */,
+				D20DCEC71E7751EF00A74C33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20DCEC71E7751EF00A74C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEC61E7751EF00A74C33 /* FinderGo.app */,
+				D20DCED71E7751EF00A74C33 /* FinderGoTests.xctest */,
+				D20DCEE21E7751EF00A74C33 /* FinderGoUITests.xctest */,
+				D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20DCEC81E7751EF00A74C33 /* FinderGo */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */,
+				D20DCECB1E7751EF00A74C33 /* ViewController.swift */,
+				D20DCECD1E7751EF00A74C33 /* Assets.xcassets */,
+				D20DCECF1E7751EF00A74C33 /* Main.storyboard */,
+				D20DCED21E7751EF00A74C33 /* Info.plist */,
+			);
+			path = FinderGo;
+			sourceTree = "<group>";
+		};
+		D20DCEDA1E7751EF00A74C33 /* FinderGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEDB1E7751EF00A74C33 /* FinderGoTests.swift */,
+				D20DCEDD1E7751EF00A74C33 /* Info.plist */,
+			);
+			path = FinderGoTests;
+			sourceTree = "<group>";
+		};
+		D20DCEE51E7751EF00A74C33 /* FinderGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEE61E7751EF00A74C33 /* FinderGoUITests.swift */,
+				D20DCEE81E7751EF00A74C33 /* Info.plist */,
+			);
+			path = FinderGoUITests;
+			sourceTree = "<group>";
+		};
+		D20DCEF91E77520400A74C33 /* FinderSyncExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEFC1E77520400A74C33 /* FinderSync.swift */,
+				D20DCEFE1E77520400A74C33 /* Info.plist */,
+				D20DCEFA1E77520400A74C33 /* Supporting Files */,
+			);
+			path = FinderSyncExtension;
+			sourceTree = "<group>";
+		};
+		D20DCEFA1E77520400A74C33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D20DCEFB1E77520400A74C33 /* FinderSyncExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D20DCEC51E7751EF00A74C33 /* FinderGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20DCEEB1E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGo" */;
+			buildPhases = (
+				D20DCEC21E7751EF00A74C33 /* Sources */,
+				D20DCEC31E7751EF00A74C33 /* Frameworks */,
+				D20DCEC41E7751EF00A74C33 /* Resources */,
+				D20DCF051E77520400A74C33 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20DCF001E77520400A74C33 /* PBXTargetDependency */,
+			);
+			name = FinderGo;
+			productName = FinderGo;
+			productReference = D20DCEC61E7751EF00A74C33 /* FinderGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D20DCED61E7751EF00A74C33 /* FinderGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20DCEEE1E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoTests" */;
+			buildPhases = (
+				D20DCED31E7751EF00A74C33 /* Sources */,
+				D20DCED41E7751EF00A74C33 /* Frameworks */,
+				D20DCED51E7751EF00A74C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20DCED91E7751EF00A74C33 /* PBXTargetDependency */,
+			);
+			name = FinderGoTests;
+			productName = FinderGoTests;
+			productReference = D20DCED71E7751EF00A74C33 /* FinderGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D20DCEE11E7751EF00A74C33 /* FinderGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20DCEF11E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoUITests" */;
+			buildPhases = (
+				D20DCEDE1E7751EF00A74C33 /* Sources */,
+				D20DCEDF1E7751EF00A74C33 /* Frameworks */,
+				D20DCEE01E7751EF00A74C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20DCEE41E7751EF00A74C33 /* PBXTargetDependency */,
+			);
+			name = FinderGoUITests;
+			productName = FinderGoUITests;
+			productReference = D20DCEE21E7751EF00A74C33 /* FinderGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D20DCEF71E77520400A74C33 /* FinderSyncExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20DCF021E77520400A74C33 /* Build configuration list for PBXNativeTarget "FinderSyncExtension" */;
+			buildPhases = (
+				D20DCEF41E77520400A74C33 /* Sources */,
+				D20DCEF51E77520400A74C33 /* Frameworks */,
+				D20DCEF61E77520400A74C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinderSyncExtension;
+			productName = FinderSyncExtension;
+			productReference = D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D20DCEBE1E7751EF00A74C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Fantageek;
+				TargetAttributes = {
+					D20DCEC51E7751EF00A74C33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D20DCED61E7751EF00A74C33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20DCEC51E7751EF00A74C33;
+					};
+					D20DCEE11E7751EF00A74C33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20DCEC51E7751EF00A74C33;
+					};
+					D20DCEF71E77520400A74C33 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D20DCEC11E7751EF00A74C33 /* Build configuration list for PBXProject "FinderGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D20DCEBD1E7751EF00A74C33;
+			productRefGroup = D20DCEC71E7751EF00A74C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20DCEC51E7751EF00A74C33 /* FinderGo */,
+				D20DCED61E7751EF00A74C33 /* FinderGoTests */,
+				D20DCEE11E7751EF00A74C33 /* FinderGoUITests */,
+				D20DCEF71E77520400A74C33 /* FinderSyncExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20DCEC41E7751EF00A74C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */,
+				D20DCED11E7751EF00A74C33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCED51E7751EF00A74C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEE01E7751EF00A74C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEF61E77520400A74C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D20DCEC21E7751EF00A74C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */,
+				D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCED31E7751EF00A74C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DCEDC1E7751EF00A74C33 /* FinderGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEDE1E7751EF00A74C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DCEE71E7751EF00A74C33 /* FinderGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20DCEF41E77520400A74C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DCEFD1E77520400A74C33 /* FinderSync.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20DCED91E7751EF00A74C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20DCEC51E7751EF00A74C33 /* FinderGo */;
+			targetProxy = D20DCED81E7751EF00A74C33 /* PBXContainerItemProxy */;
+		};
+		D20DCEE41E7751EF00A74C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20DCEC51E7751EF00A74C33 /* FinderGo */;
+			targetProxy = D20DCEE31E7751EF00A74C33 /* PBXContainerItemProxy */;
+		};
+		D20DCF001E77520400A74C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20DCEF71E77520400A74C33 /* FinderSyncExtension */;
+			targetProxy = D20DCEFF1E77520400A74C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D20DCECF1E7751EF00A74C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20DCED01E7751EF00A74C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D20DCEE91E7751EF00A74C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20DCEEA1E7751EF00A74C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D20DCEEC1E7751EF00A74C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D20DCEED1E7751EF00A74C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D20DCEEF1E7751EF00A74C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinderGo.app/Contents/MacOS/FinderGo";
+			};
+			name = Debug;
+		};
+		D20DCEF01E7751EF00A74C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinderGo.app/Contents/MacOS/FinderGo";
+			};
+			name = Release;
+		};
+		D20DCEF21E7751EF00A74C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FinderGo;
+			};
+			name = Debug;
+		};
+		D20DCEF31E7751EF00A74C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FinderGo;
+			};
+			name = Release;
+		};
+		D20DCF031E77520400A74C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGo.FinderSyncExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D20DCF041E77520400A74C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.FinderGo.FinderSyncExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D20DCEC11E7751EF00A74C33 /* Build configuration list for PBXProject "FinderGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20DCEE91E7751EF00A74C33 /* Debug */,
+				D20DCEEA1E7751EF00A74C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20DCEEB1E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20DCEEC1E7751EF00A74C33 /* Debug */,
+				D20DCEED1E7751EF00A74C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D20DCEEE1E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20DCEEF1E7751EF00A74C33 /* Debug */,
+				D20DCEF01E7751EF00A74C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D20DCEF11E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20DCEF21E7751EF00A74C33 /* Debug */,
+				D20DCEF31E7751EF00A74C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D20DCF021E77520400A74C33 /* Build configuration list for PBXNativeTarget "FinderSyncExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20DCF031E77520400A74C33 /* Debug */,
+				D20DCF041E77520400A74C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D20DCEBE1E7751EF00A74C33 /* Project object */;
+}
