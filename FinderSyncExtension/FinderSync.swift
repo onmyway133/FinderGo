@@ -60,7 +60,7 @@ class FinderSync: FIFinderSync {
   }
 
   override var toolbarItemImage: NSImage {
-    return NSImage(named: NSImageNameStatusAvailable)!
+    return NSImage(named: "barIcon")!
   }
 
   override func menu(for menuKind: FIMenuKind) -> NSMenu {

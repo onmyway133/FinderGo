@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
 		D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */; };
 		D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCECB1E7751EF00A74C33 /* ViewController.swift */; };
 		D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
@@ -330,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +626,7 @@
 				D20DCEED1E7751EF00A74C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20DCEEE1E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoTests" */ = {
 			isa = XCConfigurationList;
@@ -632,6 +635,7 @@
 				D20DCEF01E7751EF00A74C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20DCEF11E7751EF00A74C33 /* Build configuration list for PBXNativeTarget "FinderGoUITests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +644,7 @@
 				D20DCEF31E7751EF00A74C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20DCF021E77520400A74C33 /* Build configuration list for PBXNativeTarget "FinderSyncExtension" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +653,7 @@
 				D20DCF041E77520400A74C33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
