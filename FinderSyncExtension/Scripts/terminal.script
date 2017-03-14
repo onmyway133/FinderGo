@@ -1,0 +1,3 @@
+tell application "System Events"
+  do shell script "open -a Terminal {{PATH}}"
+end tell

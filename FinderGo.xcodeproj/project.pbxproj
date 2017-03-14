@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
+		D20C776C1E789D7E0055E5FF /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D20C77691E789D7E0055E5FF /* terminal.script */; };
 		D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */; };
 		D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCECB1E7751EF00A74C33 /* ViewController.swift */; };
 		D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		D20DCEE71E7751EF00A74C33 /* FinderGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEE61E7751EF00A74C33 /* FinderGoUITests.swift */; };
 		D20DCEFD1E77520400A74C33 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEFC1E77520400A74C33 /* FinderSync.swift */; };
 		D20DCF011E77520400A74C33 /* FinderSyncExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D24EC23C1E78A8920035AA4C /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23A1E78A8920035AA4C /* hyper.script */; };
+		D24EC23D1E78A8920035AA4C /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D20C77691E789D7E0055E5FF /* terminal.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terminal.script; sourceTree = "<group>"; };
 		D20DCEC61E7751EF00A74C33 /* FinderGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20DCECB1E7751EF00A74C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		D20DCEFB1E77520400A74C33 /* FinderSyncExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderSyncExtension.entitlements; sourceTree = "<group>"; };
 		D20DCEFC1E77520400A74C33 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		D20DCEFE1E77520400A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24EC23A1E78A8920035AA4C /* hyper.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.script; sourceTree = "<group>"; };
+		D24EC23B1E78A8920035AA4C /* iterm.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.script; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D20C77661E789D7E0055E5FF /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D24EC23A1E78A8920035AA4C /* hyper.script */,
+				D24EC23B1E78A8920035AA4C /* iterm.script */,
+				D20C77691E789D7E0055E5FF /* terminal.script */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		D20DCEBD1E7751EF00A74C33 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +178,7 @@
 		D20DCEF91E77520400A74C33 /* FinderSyncExtension */ = {
 			isa = PBXGroup;
 			children = (
+				D20C77661E789D7E0055E5FF /* Scripts */,
 				D20DCEFC1E77520400A74C33 /* FinderSync.swift */,
 				D20DCEFE1E77520400A74C33 /* Info.plist */,
 				D20DCEFA1E77520400A74C33 /* Supporting Files */,
@@ -331,7 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24EC23D1E78A8920035AA4C /* iterm.script in Resources */,
 				D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */,
+				D24EC23C1E78A8920035AA4C /* hyper.script in Resources */,
+				D20C776C1E789D7E0055E5FF /* terminal.script in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

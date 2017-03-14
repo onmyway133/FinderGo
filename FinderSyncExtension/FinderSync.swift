@@ -74,15 +74,34 @@ class FinderSync: FIFinderSync {
   }
 
   @IBAction func openiTerm(_ sender: AnyObject?) {
-
+    run(name: "iterm")
   }
 
   @IBAction func openTerminal(_ sender: AnyObject?) {
-
+    run(name: "terminal")
   }
 
   @IBAction func openHyper(_ sender: AnyObject?) {
+    run(name: "hyper")
+  }
 
+  // MARK: - Script
+
+  func run(name: String) {
+    guard let scriptUrl = Bundle.main.url(forResource: name, withExtension: "script"),
+      let string = try? String(contentsOf: scriptUrl),
+      let targetedUrl = FIFinderSyncController.default().targetedURL() else {
+      return
+    }
+
+    let source = string
+      .replacingOccurrences(of: "{{PATH}}", with: targetedUrl.path)
+      .trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    let script = NSAppleScript(source: source)
+
+    var executeError: NSDictionary?
+    script?.executeAndReturnError(&executeError)
+    print(executeError as Any)
   }
 }
 
