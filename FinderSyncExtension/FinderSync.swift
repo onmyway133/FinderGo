@@ -88,20 +88,11 @@ class FinderSync: FIFinderSync, NSMenuDelegate {
   // MARK: - Script
 
   func run(name: String) {
-    guard let scriptUrl = Bundle.main.url(forResource: name, withExtension: "script"),
-      let string = try? String(contentsOf: scriptUrl),
-      let targetedUrl = FIFinderSyncController.default().targetedURL() else {
+    guard let targetedUrl = FIFinderSyncController.default().targetedURL() else {
       return
     }
 
-    let source = string
-      .replacingOccurrences(of: "{{PATH}}", with: targetedUrl.path)
-      .trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-    let script = NSAppleScript(source: source)
-
-    var executeError: NSDictionary?
-    script?.executeAndReturnError(&executeError)
-    print(executeError as Any)
+    Utils.run(name: name, path: targetedUrl.path)
   }
 }
 

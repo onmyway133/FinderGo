@@ -19,6 +19,8 @@
 		D20DCF011E77520400A74C33 /* FinderSyncExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D24EC23C1E78A8920035AA4C /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23A1E78A8920035AA4C /* hyper.script */; };
 		D24EC23D1E78A8920035AA4C /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
+		D2792E7B1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
+		D2792E7C1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		D20DCEFE1E77520400A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D24EC23A1E78A8920035AA4C /* hyper.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.script; sourceTree = "<group>"; };
 		D24EC23B1E78A8920035AA4C /* iterm.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.script; sourceTree = "<group>"; };
+		D2792E7A1E79F7C5001BD3DA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 				D20DCECD1E7751EF00A74C33 /* Assets.xcassets */,
 				D20DCECF1E7751EF00A74C33 /* Main.storyboard */,
 				D20DCED21E7751EF00A74C33 /* Info.plist */,
+				D2792E7A1E79F7C5001BD3DA /* Utils.swift */,
 			);
 			path = FinderGo;
 			sourceTree = "<group>";
@@ -364,6 +368,7 @@
 			files = (
 				D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */,
 				D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */,
+				D2792E7B1E79F7C5001BD3DA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20DCEFD1E77520400A74C33 /* FinderSync.swift in Sources */,
+				D2792E7C1E79F7C5001BD3DA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
