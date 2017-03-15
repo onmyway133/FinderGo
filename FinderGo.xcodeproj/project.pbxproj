@@ -21,6 +21,9 @@
 		D24EC23D1E78A8920035AA4C /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
 		D2792E7B1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
 		D2792E7C1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
+		D2792E7D1E79F898001BD3DA /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23A1E78A8920035AA4C /* hyper.script */; };
+		D2792E7E1E79F89B001BD3DA /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
+		D2792E7F1E79F89C001BD3DA /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D20C77691E789D7E0055E5FF /* terminal.script */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -329,7 +332,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2792E7F1E79F89C001BD3DA /* terminal.script in Resources */,
+				D2792E7E1E79F89B001BD3DA /* iterm.script in Resources */,
 				D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */,
+				D2792E7D1E79F898001BD3DA /* hyper.script in Resources */,
 				D20DCED11E7751EF00A74C33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
