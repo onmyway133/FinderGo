@@ -14,6 +14,7 @@ class ViewController: NSViewController {
     super.viewDidLoad()
 
     Utils.open()
+    NSApplication.shared().terminate(self)
   }
 }
 
