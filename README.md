@@ -14,13 +14,14 @@
 
 # Description
 
+- A Finder Sync Extension on your toolbar to open terminal quickly
 - Icon http://emojione.com/
 
 # Features
 
 - [x] Go to Terminal
-- [ ] Go to iTerm
-- [ ] Go to Hyper
+- [x] Go to iTerm
+- [x] Go to Hyper
 
 # How to use
 

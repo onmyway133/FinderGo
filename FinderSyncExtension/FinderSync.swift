@@ -9,21 +9,12 @@
 import Cocoa
 import FinderSync
 
-class FinderSync: FIFinderSync {
-
-  var myFolderURL = URL(fileURLWithPath: "/Users/Shared/MySyncExtension Documents")
+class FinderSync: FIFinderSync, NSMenuDelegate {
 
   override init() {
     super.init()
 
     NSLog("FinderSync() launched from %@", Bundle.main.bundlePath as NSString)
-
-    // Set up the directory we are syncing.
-    FIFinderSyncController.default().directoryURLs = [self.myFolderURL]
-
-    // Set up images for our badge identifiers. For demonstration purposes, this uses off-the-shelf images.
-    FIFinderSyncController.default().setBadgeImage(NSImage(named: NSImageNameColorPanel)!, label: "Status One" , forBadgeIdentifier: "One")
-    FIFinderSyncController.default().setBadgeImage(NSImage(named: NSImageNameCaution)!, label: "Status Two", forBadgeIdentifier: "Two")
   }
 
   // MARK: - Primary Finder Sync protocol methods
@@ -42,11 +33,6 @@ class FinderSync: FIFinderSync {
 
   override func requestBadgeIdentifier(for url: URL) {
     NSLog("requestBadgeIdentifierForURL: %@", url.path as NSString)
-
-    // For demonstration purposes, this picks one of our two badges, or no badge at all, based on the filename.
-    let whichBadge = abs(url.path.hash) % 3
-    let badgeIdentifier = ["", "One", "Two"][whichBadge]
-    FIFinderSyncController.default().setBadgeIdentifier(badgeIdentifier, for: url)
   }
 
   // MARK: - Menu and toolbar item support
@@ -65,6 +51,7 @@ class FinderSync: FIFinderSync {
 
   override func menu(for menuKind: FIMenuKind) -> NSMenu {
     let menu = NSMenu(title: "")
+    menu.delegate = self
 
     menu.addItem(withTitle: "iTerm", action: #selector(openiTerm(_:)), keyEquivalent: "")
     menu.addItem(withTitle: "Terminal", action: #selector(openTerminal(_:)), keyEquivalent: "")
@@ -72,6 +59,19 @@ class FinderSync: FIFinderSync {
 
     return menu
   }
+
+  // MARK: - NSMenuDelegate
+
+  func menuWillOpen(_ menu: NSMenu) {
+    guard let targetedUrl = FIFinderSyncController.default().targetedURL() else {
+      return
+    }
+
+    let board = NSPasteboard.general()
+    board.setString(targetedUrl.path, forType: NSPasteboardTypeString)
+  }
+
+  // MARK: - Action
 
   @IBAction func openiTerm(_ sender: AnyObject?) {
     run(name: "iterm")
