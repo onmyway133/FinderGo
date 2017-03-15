@@ -16,19 +16,22 @@
 
 - Icon http://emojione.com/
 
-## Finder Sync Extension
 
-- Sandbox 
+### As a Finder Sync Extension
 
-## Application
+- Use `FinderSyncExtension` scheme
+- Features
+	- [x] Go to Terminal
+	- [x] Go to iTerm
+	- [x] Go to Hyper
 
+- Can't run script due to Sandbox 😥
+
+### As a macOS Application
+
+- Use `FinderGo` scheme
 - Cmd+Drag app icon into Finder toolbar
-
-# Features
-
-- [x] Go to Terminal
-- [x] Go to iTerm
-- [x] Go to Hyper
+- Open `iTerm` for now
 
 # How to use
 
