@@ -6,9 +6,22 @@
 //  Copyright © 2017 Fantageek. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 struct Utils {
+
+  static func finderCurrentPath() -> String? {
+    run(name: "finderCurrentPath", path: "")
+    return NSPasteboard.general().string(forType: NSPasteboardTypeString)
+  }
+
+  static func open() {
+    guard let path = finderCurrentPath() else {
+      return
+    }
+
+    run(name: "iterm", path: path)
+  }
 
   static func run(name: String, path: String) {
     guard let scriptUrl = Bundle.main.url(forResource: name, withExtension: "script"),
@@ -23,6 +36,9 @@ struct Utils {
 
     var executeError: NSDictionary?
     script?.executeAndReturnError(&executeError)
-    print(executeError as Any)
+
+    if executeError != nil {
+      print(executeError as Any)
+    }
   }
 }

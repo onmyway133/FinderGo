@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
-		D20C776C1E789D7E0055E5FF /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D20C77691E789D7E0055E5FF /* terminal.script */; };
 		D20DCECA1E7751EF00A74C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */; };
 		D20DCECC1E7751EF00A74C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCECB1E7751EF00A74C33 /* ViewController.swift */; };
 		D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20DCECD1E7751EF00A74C33 /* Assets.xcassets */; };
@@ -17,13 +16,16 @@
 		D20DCEE71E7751EF00A74C33 /* FinderGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEE61E7751EF00A74C33 /* FinderGoUITests.swift */; };
 		D20DCEFD1E77520400A74C33 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20DCEFC1E77520400A74C33 /* FinderSync.swift */; };
 		D20DCF011E77520400A74C33 /* FinderSyncExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D20DCEF81E77520400A74C33 /* FinderSyncExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D24EC23C1E78A8920035AA4C /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23A1E78A8920035AA4C /* hyper.script */; };
-		D24EC23D1E78A8920035AA4C /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
 		D2792E7B1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
 		D2792E7C1E79F7C5001BD3DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* Utils.swift */; };
-		D2792E7D1E79F898001BD3DA /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23A1E78A8920035AA4C /* hyper.script */; };
-		D2792E7E1E79F89B001BD3DA /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D24EC23B1E78A8920035AA4C /* iterm.script */; };
-		D2792E7F1E79F89C001BD3DA /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D20C77691E789D7E0055E5FF /* terminal.script */; };
+		D2792E821E79FC71001BD3DA /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2792E811E79FC71001BD3DA /* ScriptingBridge.framework */; };
+		D2792E871E79FE3B001BD3DA /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E841E79FE3B001BD3DA /* hyper.script */; };
+		D2792E881E79FE3B001BD3DA /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E841E79FE3B001BD3DA /* hyper.script */; };
+		D2792E891E79FE3B001BD3DA /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E851E79FE3B001BD3DA /* iterm.script */; };
+		D2792E8A1E79FE3B001BD3DA /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E851E79FE3B001BD3DA /* iterm.script */; };
+		D2792E8B1E79FE3B001BD3DA /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E861E79FE3B001BD3DA /* terminal.script */; };
+		D2792E8C1E79FE3B001BD3DA /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E861E79FE3B001BD3DA /* terminal.script */; };
+		D2792E8E1E79FE64001BD3DA /* finderCurrentPath.script in Resources */ = {isa = PBXBuildFile; fileRef = D2792E8D1E79FE64001BD3DA /* finderCurrentPath.script */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D20C77691E789D7E0055E5FF /* terminal.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terminal.script; sourceTree = "<group>"; };
 		D20DCEC61E7751EF00A74C33 /* FinderGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20DCECB1E7751EF00A74C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,9 +83,12 @@
 		D20DCEFB1E77520400A74C33 /* FinderSyncExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderSyncExtension.entitlements; sourceTree = "<group>"; };
 		D20DCEFC1E77520400A74C33 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		D20DCEFE1E77520400A74C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D24EC23A1E78A8920035AA4C /* hyper.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.script; sourceTree = "<group>"; };
-		D24EC23B1E78A8920035AA4C /* iterm.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.script; sourceTree = "<group>"; };
 		D2792E7A1E79F7C5001BD3DA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D2792E811E79FC71001BD3DA /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		D2792E841E79FE3B001BD3DA /* hyper.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.script; sourceTree = "<group>"; };
+		D2792E851E79FE3B001BD3DA /* iterm.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.script; sourceTree = "<group>"; };
+		D2792E861E79FE3B001BD3DA /* terminal.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terminal.script; sourceTree = "<group>"; };
+		D2792E8D1E79FE64001BD3DA /* finderCurrentPath.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = finderCurrentPath.script; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2792E821E79FC71001BD3DA /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,16 +124,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D20C77661E789D7E0055E5FF /* Scripts */ = {
-			isa = PBXGroup;
-			children = (
-				D24EC23A1E78A8920035AA4C /* hyper.script */,
-				D24EC23B1E78A8920035AA4C /* iterm.script */,
-				D20C77691E789D7E0055E5FF /* terminal.script */,
-			);
-			path = Scripts;
-			sourceTree = "<group>";
-		};
 		D20DCEBD1E7751EF00A74C33 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +132,7 @@
 				D20DCEE51E7751EF00A74C33 /* FinderGoUITests */,
 				D20DCEF91E77520400A74C33 /* FinderSyncExtension */,
 				D20DCEC71E7751EF00A74C33 /* Products */,
+				D2792E801E79FC70001BD3DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +150,7 @@
 		D20DCEC81E7751EF00A74C33 /* FinderGo */ = {
 			isa = PBXGroup;
 			children = (
+				D2792E831E79FE3B001BD3DA /* Scripts */,
 				D20DCEC91E7751EF00A74C33 /* AppDelegate.swift */,
 				D20DCECB1E7751EF00A74C33 /* ViewController.swift */,
 				D20DCECD1E7751EF00A74C33 /* Assets.xcassets */,
@@ -185,7 +182,6 @@
 		D20DCEF91E77520400A74C33 /* FinderSyncExtension */ = {
 			isa = PBXGroup;
 			children = (
-				D20C77661E789D7E0055E5FF /* Scripts */,
 				D20DCEFC1E77520400A74C33 /* FinderSync.swift */,
 				D20DCEFE1E77520400A74C33 /* Info.plist */,
 				D20DCEFA1E77520400A74C33 /* Supporting Files */,
@@ -199,6 +195,25 @@
 				D20DCEFB1E77520400A74C33 /* FinderSyncExtension.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2792E801E79FC70001BD3DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2792E811E79FC71001BD3DA /* ScriptingBridge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2792E831E79FE3B001BD3DA /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D2792E8D1E79FE64001BD3DA /* finderCurrentPath.script */,
+				D2792E841E79FE3B001BD3DA /* hyper.script */,
+				D2792E851E79FE3B001BD3DA /* iterm.script */,
+				D2792E861E79FE3B001BD3DA /* terminal.script */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,10 +347,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2792E7F1E79F89C001BD3DA /* terminal.script in Resources */,
-				D2792E7E1E79F89B001BD3DA /* iterm.script in Resources */,
+				D2792E8B1E79FE3B001BD3DA /* terminal.script in Resources */,
+				D2792E891E79FE3B001BD3DA /* iterm.script in Resources */,
+				D2792E8E1E79FE64001BD3DA /* finderCurrentPath.script in Resources */,
 				D20DCECE1E7751EF00A74C33 /* Assets.xcassets in Resources */,
-				D2792E7D1E79F898001BD3DA /* hyper.script in Resources */,
+				D2792E871E79FE3B001BD3DA /* hyper.script in Resources */,
 				D20DCED11E7751EF00A74C33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,10 +374,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24EC23D1E78A8920035AA4C /* iterm.script in Resources */,
 				D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */,
-				D24EC23C1E78A8920035AA4C /* hyper.script in Resources */,
-				D20C776C1E789D7E0055E5FF /* terminal.script in Resources */,
+				D2792E881E79FE3B001BD3DA /* hyper.script in Resources */,
+				D2792E8C1E79FE3B001BD3DA /* terminal.script in Resources */,
+				D2792E8A1E79FE3B001BD3DA /* iterm.script in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
