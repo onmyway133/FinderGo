@@ -7,7 +7,7 @@
 </div>
 
 <div align = "center">
-<img src="Images/screenshot1.png" />
+<img src="Images/screenshot2.png" />
 <br>
 <br>
 </div>
