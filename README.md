@@ -6,12 +6,6 @@
 <br>
 </div>
 
-<div align = "center">
-<img src="Images/screenshot2.png" />
-<br>
-<br>
-</div>
-
 # Description
 
 - Icon http://emojione.com/
@@ -26,6 +20,12 @@
 	- [x] Go to Hyper
 
 - Can't run script due to Sandbox 😥
+
+<div align = "center">
+<img src="Images/screenshot2.png" />
+<br>
+<br>
+</div>
 
 ### As a macOS Application
 
