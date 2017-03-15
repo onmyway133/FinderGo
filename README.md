@@ -33,6 +33,8 @@
 - Cmd+Drag app icon into Finder toolbar
 - Open `iTerm` for now
 
+![](Images/go1.gif)
+
 # How to use
 
 - Get the binary from https://github.com/onmyway133/FinderGo/releases
