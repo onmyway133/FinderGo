@@ -14,8 +14,15 @@
 
 # Description
 
-- A Finder Sync Extension on your toolbar to open terminal quickly
 - Icon http://emojione.com/
+
+## Finder Sync Extension
+
+- Sandbox 
+
+## Application
+
+- Cmd+Drag app icon into Finder toolbar
 
 # Features
 
