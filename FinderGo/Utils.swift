@@ -20,7 +20,12 @@ struct Utils {
       return
     }
 
-    run(name: "iterm", path: path)
+    let process = Process()
+    process.launchPath = "/usr/bin/open"
+    process.arguments = ["-a", "iTerm", "\(path)"]
+
+    process.launch()
+    process.waitUntilExit()
   }
 
   static func run(name: String, path: String) {
