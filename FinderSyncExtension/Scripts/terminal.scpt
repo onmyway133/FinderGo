@@ -1,3 +1,4 @@
 tell application "Finder"
-  do shell script "open -a Terminal {{PATH}}"
+  set cwd to POSIX path of ((target of front Finder window) as text)
+  do shell script "open -a Terminal " & quoted form of cwd
 end tell
