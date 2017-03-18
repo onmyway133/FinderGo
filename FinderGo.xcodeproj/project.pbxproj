@@ -19,9 +19,9 @@
 		D2792E7B1E79F7C5001BD3DA /* AppWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2792E7A1E79F7C5001BD3DA /* AppWorker.swift */; };
 		D2792E821E79FC71001BD3DA /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2792E811E79FC71001BD3DA /* ScriptingBridge.framework */; };
 		D2792E8E1E79FE64001BD3DA /* finderCurrentPath.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D2792E8D1E79FE64001BD3DA /* finderCurrentPath.scpt */; };
-		D2C1DF0E1E7D1B4100A0AFF0 /* hyper.script in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0B1E7D1B4100A0AFF0 /* hyper.script */; };
-		D2C1DF0F1E7D1B4100A0AFF0 /* iterm.script in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0C1E7D1B4100A0AFF0 /* iterm.script */; };
-		D2C1DF101E7D1B4100A0AFF0 /* terminal.script in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0D1E7D1B4100A0AFF0 /* terminal.script */; };
+		D2C1DF0E1E7D1B4100A0AFF0 /* hyper.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0B1E7D1B4100A0AFF0 /* hyper.scpt */; };
+		D2C1DF0F1E7D1B4100A0AFF0 /* iterm.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0C1E7D1B4100A0AFF0 /* iterm.scpt */; };
+		D2C1DF101E7D1B4100A0AFF0 /* terminal.scpt in Resources */ = {isa = PBXBuildFile; fileRef = D2C1DF0D1E7D1B4100A0AFF0 /* terminal.scpt */; };
 		D2C1DF121E7D1B6300A0AFF0 /* ExtensionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C1DF111E7D1B6300A0AFF0 /* ExtensionWorker.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,9 +83,9 @@
 		D2792E7A1E79F7C5001BD3DA /* AppWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppWorker.swift; sourceTree = "<group>"; };
 		D2792E811E79FC71001BD3DA /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		D2792E8D1E79FE64001BD3DA /* finderCurrentPath.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = finderCurrentPath.scpt; sourceTree = "<group>"; };
-		D2C1DF0B1E7D1B4100A0AFF0 /* hyper.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.script; sourceTree = "<group>"; };
-		D2C1DF0C1E7D1B4100A0AFF0 /* iterm.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.script; sourceTree = "<group>"; };
-		D2C1DF0D1E7D1B4100A0AFF0 /* terminal.script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terminal.script; sourceTree = "<group>"; };
+		D2C1DF0B1E7D1B4100A0AFF0 /* hyper.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hyper.scpt; sourceTree = "<group>"; };
+		D2C1DF0C1E7D1B4100A0AFF0 /* iterm.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iterm.scpt; sourceTree = "<group>"; };
+		D2C1DF0D1E7D1B4100A0AFF0 /* terminal.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = terminal.scpt; sourceTree = "<group>"; };
 		D2C1DF111E7D1B6300A0AFF0 /* ExtensionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,9 +216,9 @@
 		D2C1DF0A1E7D1B4100A0AFF0 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				D2C1DF0B1E7D1B4100A0AFF0 /* hyper.script */,
-				D2C1DF0C1E7D1B4100A0AFF0 /* iterm.script */,
-				D2C1DF0D1E7D1B4100A0AFF0 /* terminal.script */,
+				D2C1DF0B1E7D1B4100A0AFF0 /* hyper.scpt */,
+				D2C1DF0C1E7D1B4100A0AFF0 /* iterm.scpt */,
+				D2C1DF0D1E7D1B4100A0AFF0 /* terminal.scpt */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -379,9 +379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20C77611E7898B20055E5FF /* Assets.xcassets in Resources */,
-				D2C1DF0E1E7D1B4100A0AFF0 /* hyper.script in Resources */,
-				D2C1DF101E7D1B4100A0AFF0 /* terminal.script in Resources */,
-				D2C1DF0F1E7D1B4100A0AFF0 /* iterm.script in Resources */,
+				D2C1DF0E1E7D1B4100A0AFF0 /* hyper.scpt in Resources */,
+				D2C1DF101E7D1B4100A0AFF0 /* terminal.scpt in Resources */,
+				D2C1DF0F1E7D1B4100A0AFF0 /* iterm.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,22 +18,92 @@ struct ExtensionWorker {
     self.fileName = fileName
   }
 
+  var bundle: String {
+    return Bundle(for: FinderSync.self).bundleIdentifier!
+  }
+
+  var scriptPath: URL? {
+    return try? FileManager.default.url(for: .applicationScriptsDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+  }
+
+  var bundleScriptPath: URL? {
+    return scriptPath?.appendingPathComponent(bundle)
+  }
+
+  func fileScriptPath(fileName: String) -> URL? {
+    return bundleScriptPath?
+      .appendingPathComponent(fileName)
+      .appendingPathExtension("scpt")
+  }
+
   func run() {
-    guard let scriptUrl = Bundle.main.url(forResource: fileName, withExtension: "script"),
-      let string = try? String(contentsOf: scriptUrl) else {
+    guard let filePath = fileScriptPath(fileName: fileName) else {
+      return
+    }
+
+    guard FileManager.default.fileExists(atPath: filePath.path) else {
+      openPanel()
+      return
+    }
+
+    guard let script = try? NSUserAppleScriptTask(url: filePath) else {
+      return
+    }
+
+    script.execute(completionHandler: nil)
+  }
+
+  func openPanel() {
+    let panel = NSOpenPanel()
+    panel.directoryURL = scriptPath
+    panel.canChooseDirectories = true
+    panel.canChooseFiles = false
+    panel.prompt = "Select Script Folder"
+    panel.message = "Please select the User > Library > Application Scripts > \(bundle) folder"
+
+    panel.begin { result in
+      guard result == NSFileHandlingPanelOKButton,
+        panel.url == self.bundleScriptPath else {
+
+        self.alert(message: "Script folder was not selected")
         return
+      }
+
+      let result = self.copy()
+      if result {
+        self.alert(message: "Done")
+      } else {
+        self.alert(message: "Fail")
+      }
+    }
+  }
+
+  func alert(message: String) {
+    let alert = NSAlert()
+    alert.messageText = "🐢 Finder Go"
+    alert.informativeText = message
+    alert.addButton(withTitle: "OK")
+
+    alert.runModal()
+  }
+
+  func copy() -> Bool {
+    let fileNames = ["terminal", "iterm", "hyper"]
+
+    for fileName in fileNames {
+      guard let path = Bundle(for: FinderSync.self).url(forResource: fileName, withExtension: "scpt"),
+        let destinationPath = fileScriptPath(fileName: fileName) else {
+
+        return false
+      }
+
+      do {
+        try FileManager.default.copyItem(at: path, to: destinationPath)
+      } catch {
+        return false
+      }
     }
 
-    let source = string
-      .replacingOccurrences(of: "{{PATH}}", with: path)
-      .trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-    let script = NSAppleScript(source: source)
-
-    var executeError: NSDictionary?
-    script?.executeAndReturnError(&executeError)
-
-    if executeError != nil {
-      print(executeError as Any)
-    }
+    return true
   }
 }
