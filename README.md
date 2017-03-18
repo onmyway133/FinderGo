@@ -12,9 +12,10 @@
 
 ### As a macOS Application
 
-- Use `FinderGo` scheme
+- Get the binary from https://github.com/onmyway133/FinderGo/releases
+- Run the application at least once
 - Cmd+Drag app icon into Finder toolbar
-- Open `iTerm` for now
+- Support `iTerm` for now
 
 ![](Images/go1.gif)
 
@@ -33,10 +34,6 @@
 <br>
 <br>
 </div>
-
-# How to use
-
-- Get the binary from https://github.com/onmyway133/FinderGo/releases
 
 ## Author
 
