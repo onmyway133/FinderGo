@@ -26,12 +26,8 @@ struct ExtensionWorker {
     return try? FileManager.default.url(for: .applicationScriptsDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
   }
 
-  var bundleScriptPath: URL? {
-    return scriptPath?.appendingPathComponent(bundle)
-  }
-
   func fileScriptPath(fileName: String) -> URL? {
-    return bundleScriptPath?
+    return scriptPath?
       .appendingPathComponent(fileName)
       .appendingPathExtension("scpt")
   }
@@ -63,7 +59,7 @@ struct ExtensionWorker {
 
     panel.begin { result in
       guard result == NSFileHandlingPanelOKButton,
-        panel.url == self.bundleScriptPath else {
+        panel.url == self.scriptPath else {
 
         self.alert(message: "Script folder was not selected")
         return
