@@ -10,6 +10,13 @@
 
 - Icon http://emojione.com/
 
+### As a macOS Application
+
+- Use `FinderGo` scheme
+- Cmd+Drag app icon into Finder toolbar
+- Open `iTerm` for now
+
+![](Images/go1.gif)
 
 ### As a Finder Sync Extension
 
@@ -19,21 +26,13 @@
 	- [x] Go to iTerm
 	- [x] Go to Hyper
 
-- Can't run script due to Sandbox 😥
+- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension`
 
 <div align = "center">
 <img src="Images/screenshot2.png" />
 <br>
 <br>
 </div>
-
-### As a macOS Application
-
-- Use `FinderGo` scheme
-- Cmd+Drag app icon into Finder toolbar
-- Open `iTerm` for now
-
-![](Images/go1.gif)
 
 # How to use
 
