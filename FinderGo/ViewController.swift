@@ -13,7 +13,8 @@ class ViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    Utils.open()
+    let worker = AppWorker()
+    worker.run()
 
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
       NSApplication.shared().terminate(self)

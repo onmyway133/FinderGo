@@ -74,25 +74,26 @@ class FinderSync: FIFinderSync, NSMenuDelegate {
   // MARK: - Action
 
   @IBAction func openiTerm(_ sender: AnyObject?) {
-    run(name: "iterm")
+    run(fileName: "iterm")
   }
 
   @IBAction func openTerminal(_ sender: AnyObject?) {
-    run(name: "terminal")
+    run(fileName: "terminal")
   }
 
   @IBAction func openHyper(_ sender: AnyObject?) {
-    run(name: "hyper")
+    run(fileName: "hyper")
   }
 
   // MARK: - Script
 
-  func run(name: String) {
+  func run(fileName: String) {
     guard let targetedUrl = FIFinderSyncController.default().targetedURL() else {
       return
     }
 
-    Utils.run(name: name, path: targetedUrl.path)
+    let worker = ExtensionWorker(path: targetedUrl.path, fileName: fileName)
+    worker.run()
   }
 }
 
