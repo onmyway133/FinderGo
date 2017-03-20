@@ -13,7 +13,7 @@
 ### As a macOS Application
 
 - Get the binary from https://github.com/onmyway133/FinderGo/releases
-- Run the application at least once
+- Right click on app to open, because this is not from AppStore
 - Cmd+Drag app icon into Finder toolbar
 - Support `iTerm` for now
 
@@ -27,7 +27,7 @@
 	- [x] Go to iTerm
 	- [x] Go to Hyper
 
-- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension`
+- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running `curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh`
 
 <div align = "center">
 <img src="Images/screenshot2.png" />
