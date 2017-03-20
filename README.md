@@ -27,7 +27,11 @@
 	- [x] Go to iTerm
 	- [x] Go to Hyper
 
-- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running `curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh`
+- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running 
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
+```
 
 <div align = "center">
 <img src="Images/screenshot2.png" />
