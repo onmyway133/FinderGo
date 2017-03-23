@@ -9,35 +9,49 @@
 # Description
 
 - Icon http://emojione.com/
-
-### As a macOS Application
-
 - Get the binary from https://github.com/onmyway133/FinderGo/releases
-- Right click on app to open, because this is not from AppStore
-- Cmd+Drag app icon into Finder toolbar
-- Support `iTerm` for now
+
+## As a macOS Application
 
 ![](Images/go1.gif)
 
-### As a Finder Sync Extension
+### Features
 
-- Use `FinderSyncExtension` scheme
-- Features
-	- [x] Go to Terminal
-	- [x] Go to iTerm
-	- [x] Go to Hyper
+- Support `iTerm` for now
 
-- Need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running 
+### How to use
+- Right click on app to open, because this is not from AppStore
+- Cmd+Drag app icon into Finder toolbar
 
-```sh
-curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
-```
+## As a Finder Sync Extension
+
+### Features
+
+- [x] Go to Terminal
+- [x] Go to iTerm
+- [x] Go to Hyper
 
 <div align = "center">
 <img src="Images/screenshot2.png" />
 <br>
 <br>
 </div>
+
+### How to use
+
+- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running 
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
+```
+
+- Right click on Finder toolbar -> `Customize Toolbar`, then Cmd+Drag `FinderGo` onto toolbar
+
+![](Images/toolbar.png)
+
+- Also check for `System Preferences` -> `Extensions` -> `Finder` to enable `FinderGo` if it is not enabled yet
+
+![](Images/extension.png)
 
 ## Author
 
