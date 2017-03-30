@@ -45,13 +45,14 @@
 curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
 ```
 
+- Check for `System Preferences` -> `Extensions` -> `Finder` to enable `FinderGo` if it is not enabled yet
+
+![](Images/extension.png)
+
 - Right click on Finder toolbar -> `Customize Toolbar`, then Cmd+Drag `FinderGo` onto toolbar
 
 ![](Images/toolbar.png)
 
-- Also check for `System Preferences` -> `Extensions` -> `Finder` to enable `FinderGo` if it is not enabled yet
-
-![](Images/extension.png)
 
 ## Author
 
