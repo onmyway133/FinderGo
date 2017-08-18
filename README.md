@@ -10,6 +10,7 @@
 
 - Icon http://emojione.com/
 - Get the binary from https://github.com/onmyway133/FinderGo/releases
+- Support macOS 10.12
 
 ## As a macOS Application
 
