@@ -6,27 +6,28 @@
 <br>
 </div>
 
-# Description
+## Description
 
-- Icon http://emojione.com/
-- Get the binary from https://github.com/onmyway133/FinderGo/releases
+- A macOS app and Finder Sync Extension to open Terminal, iTerm, Hyper from Finder
 - Support macOS 10.12
 
-## As a macOS Application
+## How to install
+
+- Get the binary from https://github.com/onmyway133/FinderGo/releases
+
+## How to use
 
 ![](Images/go1.gif)
 
-### Features
+### As a macOS application
 
 - Support `iTerm` for now
 
-### How to use
+#### How to use
 - Right click on app to open, because this is not from AppStore
 - Cmd+Drag app icon into Finder toolbar
 
-## As a Finder Sync Extension
-
-### Features
+### As a Finder Sync Extension
 
 - [x] Go to Terminal
 - [x] Go to iTerm
@@ -38,7 +39,7 @@
 <br>
 </div>
 
-### How to use
+#### How to use
 
 - Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running 
 
@@ -54,6 +55,9 @@ curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.
 
 ![](Images/toolbar.png)
 
+## Credit
+
+- Icon http://emojione.com/
 
 ## Author
 
