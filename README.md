@@ -1,4 +1,4 @@
-# FinderGo
+# 𝗙𝗶𝗻𝗱𝗲𝗿 𝗚𝗼
 
 <div align = "center">
 <img src="Images/Icon.png" width="150" height="150" />
