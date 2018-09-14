@@ -20,14 +20,19 @@ struct AppWorker {
     return script?.executeAndReturnError(nil).stringValue
   }
 
+  func findTerminal() -> String {
+    return UserDefaults.standard.string(forKey: "terminal") ?? "iTerm"
+  }
+
   func run() {
     guard let path = finderCurrentPath() else {
       return
     }
 
     let process = Process()
+    let terminal = findTerminal()
     process.launchPath = "/usr/bin/open"
-    process.arguments = ["-a", "iTerm", "\(path)"]
+    process.arguments = ["-a", terminal, "\(path)"]
 
     process.launch()
     process.waitUntilExit()
