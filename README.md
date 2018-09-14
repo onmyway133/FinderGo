@@ -27,6 +27,16 @@
 - Right click on app to open, because this is not from AppStore
 - Cmd+Drag app icon into Finder toolbar
 
+#### How to change default terminal
+
+Run either of these to change your default terminal that FinderGo uses
+
+```
+defaults write com.onmyway133.FinderGo terminal Terminal
+defaults write com.onmyway133.FinderGo terminal iTerm
+defaults write com.onmyway133.FinderGo terminal Hyper
+```
+
 ### As a Finder Sync Extension
 
 - [x] Go to Terminal
