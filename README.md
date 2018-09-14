@@ -37,6 +37,11 @@ defaults write com.onmyway133.FinderGo terminal iTerm
 defaults write com.onmyway133.FinderGo terminal Hyper
 ```
 
+#### How to change icon
+
+- Follow https://github.com/onmyway133/FinderGo/issues/7
+
+
 ### As a Finder Sync Extension
 
 - [x] Go to Terminal
