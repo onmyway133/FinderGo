@@ -41,7 +41,7 @@
 
 #### How to use
 
-- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension` by running 
+- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.onmyway133.FinderGo.FinderSyncExtension` by running 
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
