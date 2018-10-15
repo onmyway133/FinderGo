@@ -10,7 +10,7 @@ DOWNLOAD_ITERM_URI=https://raw.githubusercontent.com/onmyway133/FinderGo/master/
 DOWNLOAD_TERMINAL_URI=https://raw.githubusercontent.com/onmyway133/FinderGo/master/FinderSyncExtension/Scripts/${terminal}
 DOWNLOAD_HYPER_URI=https://raw.githubusercontent.com/onmyway133/FinderGo/master/FinderSyncExtension/Scripts/${hyper}
 
-SCRIPT_DIR="${HOME}/Library/Application Scripts/com.fantageek.FinderGo.FinderSyncExtension"
+SCRIPT_DIR="${HOME}/Library/Application Scripts/com.onmyway133.FinderGo.FinderSyncExtension"
 
 mkdir -p "${SCRIPT_DIR}"
 curl $DOWNLOAD_ITERM_URI -o "${SCRIPT_DIR}/${iTerm}"
