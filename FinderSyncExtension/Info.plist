@@ -37,5 +37,7 @@
 	<string>Copyright © 2017 Fantageek. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+  <key>NSAppleEventsUsageDescription</key>
+  <string>Get current Finder path</string>
 </dict>
 </plist>
