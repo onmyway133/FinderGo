@@ -310,6 +310,7 @@
 				TargetAttributes = {
 					D20DCEC51E7751EF00A74C33 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
 					};
 					D20DCED61E7751EF00A74C33 = {
@@ -324,6 +325,7 @@
 					};
 					D20DCEF71E77520400A74C33 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -551,6 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = FinderGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.FinderGo;
@@ -565,6 +568,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = FinderGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.FinderGo;
@@ -636,6 +640,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.FinderGo.FinderSyncExtension;
@@ -650,6 +655,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FinderSyncExtension/FinderSyncExtension.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = FinderSyncExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.FinderGo.FinderSyncExtension;
