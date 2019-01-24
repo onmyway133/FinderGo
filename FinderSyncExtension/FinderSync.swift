@@ -67,8 +67,8 @@ class FinderSync: FIFinderSync, NSMenuDelegate {
       return
     }
 
-    let board = NSPasteboard.general()
-    board.setString(targetedUrl.path, forType: NSPasteboardTypeString)
+    let board = NSPasteboard.general
+    board.setString(targetedUrl.path, forType: NSPasteboard.PasteboardType.string)
   }
 
   // MARK: - Action

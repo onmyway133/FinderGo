@@ -17,7 +17,7 @@ class ViewController: NSViewController {
     worker.run()
 
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-      NSApplication.shared().terminate(self)
+      NSApplication.shared.terminate(self)
     }
   }
 }

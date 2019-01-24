@@ -58,7 +58,7 @@ struct ExtensionWorker {
     panel.message = "Please select the User > Library > Application Scripts > \(bundle) folder"
 
     panel.begin { result in
-      guard result == NSFileHandlingPanelOKButton,
+      guard result.rawValue == NSFileHandlingPanelOKButton,
         panel.url == self.scriptPath else {
 
         self.alert(message: "Script folder was not selected")
